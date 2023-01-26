@@ -1,0 +1,2 @@
+counting_pkg
+-DCATKIN_DEVEL_PREFIX=/home/el-shamy/MY_PC/Git_hub/Robotic-operating-system-ROS-course/tasks/task_5_Pub_Sub/catkin_ws1/devel -DCMAKE_INSTALL_PREFIX=/home/el-shamy/MY_PC/Git_hub/Robotic-operating-system-ROS-course/tasks/task_5_Pub_Sub/catkin_ws1/install -G Unix Makefiles
