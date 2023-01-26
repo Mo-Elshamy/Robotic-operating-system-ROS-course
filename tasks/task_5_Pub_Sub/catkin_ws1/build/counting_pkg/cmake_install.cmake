@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/el-shamy/MY_PC/Git_hub/Robotic-operating-system-ROS-course/tasks/task_5_Pub_Sub/catkin_ws1/build/counting_pkg/catkin_generated/installspace/counting.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/el-shamy/MY_PC/Git_hub/Robotic-operating-system-ROS-course/tasks/task_5_Pub_Sub/catkin_ws1/build/counting_pkg/catkin_generated/installspace/counting_pkg.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/counting/cmake" TYPE FILE FILES
-    "/home/el-shamy/MY_PC/Git_hub/Robotic-operating-system-ROS-course/tasks/task_5_Pub_Sub/catkin_ws1/build/counting_pkg/catkin_generated/installspace/countingConfig.cmake"
-    "/home/el-shamy/MY_PC/Git_hub/Robotic-operating-system-ROS-course/tasks/task_5_Pub_Sub/catkin_ws1/build/counting_pkg/catkin_generated/installspace/countingConfig-version.cmake"
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/counting_pkg/cmake" TYPE FILE FILES
+    "/home/el-shamy/MY_PC/Git_hub/Robotic-operating-system-ROS-course/tasks/task_5_Pub_Sub/catkin_ws1/build/counting_pkg/catkin_generated/installspace/counting_pkgConfig.cmake"
+    "/home/el-shamy/MY_PC/Git_hub/Robotic-operating-system-ROS-course/tasks/task_5_Pub_Sub/catkin_ws1/build/counting_pkg/catkin_generated/installspace/counting_pkgConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/counting" TYPE FILE FILES "/home/el-shamy/MY_PC/Git_hub/Robotic-operating-system-ROS-course/tasks/task_5_Pub_Sub/catkin_ws1/src/counting_pkg/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/counting_pkg" TYPE FILE FILES "/home/el-shamy/MY_PC/Git_hub/Robotic-operating-system-ROS-course/tasks/task_5_Pub_Sub/catkin_ws1/src/counting_pkg/package.xml")
 endif()
 
