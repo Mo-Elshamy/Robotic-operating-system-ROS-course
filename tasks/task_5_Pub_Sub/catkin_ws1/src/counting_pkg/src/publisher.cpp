@@ -7,7 +7,7 @@ int main(int argc,char** argv) {
     ros::Rate loop_rate(2);
     ros::Publisher pub =nh.advertise<std_msgs::Int32>("counter",1000);
     std_msgs::Int32 count;
-    count.data=0;
+    count.data=100;
 
     while(ros::ok()){
         pub.publish(count);
