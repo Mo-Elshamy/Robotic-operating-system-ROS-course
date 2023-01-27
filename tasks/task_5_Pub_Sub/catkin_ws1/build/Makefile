@@ -298,6 +298,19 @@ std_msgs_generate_messages_py/fast:
 .PHONY : std_msgs_generate_messages_py/fast
 
 #=============================================================================
+# Target rules for targets named counting_pkg_node
+
+# Build rule for target.
+counting_pkg_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 counting_pkg_node
+.PHONY : counting_pkg_node
+
+# fast build rule for target.
+counting_pkg_node/fast:
+	$(MAKE) -f counting_pkg/CMakeFiles/counting_pkg_node.dir/build.make counting_pkg/CMakeFiles/counting_pkg_node.dir/build
+.PHONY : counting_pkg_node/fast
+
+#=============================================================================
 # Target rules for targets named std_msgs_generate_messages_nodejs
 
 # Build rule for target.
@@ -502,6 +515,7 @@ help:
 	@echo "... gtest_main"
 	@echo "... gtest"
 	@echo "... std_msgs_generate_messages_py"
+	@echo "... counting_pkg_node"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_eus"

@@ -3,6 +3,6 @@ prefix=/home/el-shamy/MY_PC/Git_hub/Robotic-operating-system-ROS-course/tasks/ta
 Name: counting_pkg
 Description: Description of counting_pkg
 Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lcounting_pkg
+Requires: roscpp rospy std_msgs message_runtime
