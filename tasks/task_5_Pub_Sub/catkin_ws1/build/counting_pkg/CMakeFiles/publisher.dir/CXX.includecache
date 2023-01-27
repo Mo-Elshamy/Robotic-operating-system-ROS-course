@@ -12,12 +12,6 @@ ros/ros.h
 std_msgs/Int32.h
 -
 
-/home/el-shamy/MY_PC/Git_hub/Robotic-operating-system-ROS-course/tasks/task_5_Pub_Sub/catkin_ws1/src/counting_pkg/src/subscriber.cpp
-ros/ros.h
--
-std_msgs/Int32.h
--
-
 /opt/ros/noetic/include/ros/advertise_options.h
 ros/forwards.h
 /opt/ros/noetic/include/ros/ros/forwards.h

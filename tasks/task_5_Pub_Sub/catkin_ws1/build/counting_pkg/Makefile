@@ -168,6 +168,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+counting_pkg/CMakeFiles/subscriber.dir/rule:
+	cd /home/el-shamy/MY_PC/Git_hub/Robotic-operating-system-ROS-course/tasks/task_5_Pub_Sub/catkin_ws1/build && $(MAKE) -f CMakeFiles/Makefile2 counting_pkg/CMakeFiles/subscriber.dir/rule
+.PHONY : counting_pkg/CMakeFiles/subscriber.dir/rule
+
+# Convenience name for target.
+subscriber: counting_pkg/CMakeFiles/subscriber.dir/rule
+
+.PHONY : subscriber
+
+# fast build rule for target.
+subscriber/fast:
+	cd /home/el-shamy/MY_PC/Git_hub/Robotic-operating-system-ROS-course/tasks/task_5_Pub_Sub/catkin_ws1/build && $(MAKE) -f counting_pkg/CMakeFiles/subscriber.dir/build.make counting_pkg/CMakeFiles/subscriber.dir/build
+.PHONY : subscriber/fast
+
+# Convenience name for target.
 counting_pkg/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
 	cd /home/el-shamy/MY_PC/Git_hub/Robotic-operating-system-ROS-course/tasks/task_5_Pub_Sub/catkin_ws1/build && $(MAKE) -f CMakeFiles/Makefile2 counting_pkg/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 .PHONY : counting_pkg/CMakeFiles/std_msgs_generate_messages_py.dir/rule
@@ -181,21 +196,6 @@ std_msgs_generate_messages_py: counting_pkg/CMakeFiles/std_msgs_generate_message
 std_msgs_generate_messages_py/fast:
 	cd /home/el-shamy/MY_PC/Git_hub/Robotic-operating-system-ROS-course/tasks/task_5_Pub_Sub/catkin_ws1/build && $(MAKE) -f counting_pkg/CMakeFiles/std_msgs_generate_messages_py.dir/build.make counting_pkg/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-counting_pkg/CMakeFiles/counting_pkg_node.dir/rule:
-	cd /home/el-shamy/MY_PC/Git_hub/Robotic-operating-system-ROS-course/tasks/task_5_Pub_Sub/catkin_ws1/build && $(MAKE) -f CMakeFiles/Makefile2 counting_pkg/CMakeFiles/counting_pkg_node.dir/rule
-.PHONY : counting_pkg/CMakeFiles/counting_pkg_node.dir/rule
-
-# Convenience name for target.
-counting_pkg_node: counting_pkg/CMakeFiles/counting_pkg_node.dir/rule
-
-.PHONY : counting_pkg_node
-
-# fast build rule for target.
-counting_pkg_node/fast:
-	cd /home/el-shamy/MY_PC/Git_hub/Robotic-operating-system-ROS-course/tasks/task_5_Pub_Sub/catkin_ws1/build && $(MAKE) -f counting_pkg/CMakeFiles/counting_pkg_node.dir/build.make counting_pkg/CMakeFiles/counting_pkg_node.dir/build
-.PHONY : counting_pkg_node/fast
 
 # Convenience name for target.
 counting_pkg/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule:
@@ -363,6 +363,21 @@ rosgraph_msgs_generate_messages_eus/fast:
 .PHONY : rosgraph_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
+counting_pkg/CMakeFiles/publisher.dir/rule:
+	cd /home/el-shamy/MY_PC/Git_hub/Robotic-operating-system-ROS-course/tasks/task_5_Pub_Sub/catkin_ws1/build && $(MAKE) -f CMakeFiles/Makefile2 counting_pkg/CMakeFiles/publisher.dir/rule
+.PHONY : counting_pkg/CMakeFiles/publisher.dir/rule
+
+# Convenience name for target.
+publisher: counting_pkg/CMakeFiles/publisher.dir/rule
+
+.PHONY : publisher
+
+# fast build rule for target.
+publisher/fast:
+	cd /home/el-shamy/MY_PC/Git_hub/Robotic-operating-system-ROS-course/tasks/task_5_Pub_Sub/catkin_ws1/build && $(MAKE) -f counting_pkg/CMakeFiles/publisher.dir/build.make counting_pkg/CMakeFiles/publisher.dir/build
+.PHONY : publisher/fast
+
+# Convenience name for target.
 counting_pkg/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
 	cd /home/el-shamy/MY_PC/Git_hub/Robotic-operating-system-ROS-course/tasks/task_5_Pub_Sub/catkin_ws1/build && $(MAKE) -f CMakeFiles/Makefile2 counting_pkg/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 .PHONY : counting_pkg/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
@@ -413,7 +428,7 @@ src/publisher.o: src/publisher.cpp.o
 
 # target to build an object file
 src/publisher.cpp.o:
-	cd /home/el-shamy/MY_PC/Git_hub/Robotic-operating-system-ROS-course/tasks/task_5_Pub_Sub/catkin_ws1/build && $(MAKE) -f counting_pkg/CMakeFiles/counting_pkg_node.dir/build.make counting_pkg/CMakeFiles/counting_pkg_node.dir/src/publisher.cpp.o
+	cd /home/el-shamy/MY_PC/Git_hub/Robotic-operating-system-ROS-course/tasks/task_5_Pub_Sub/catkin_ws1/build && $(MAKE) -f counting_pkg/CMakeFiles/publisher.dir/build.make counting_pkg/CMakeFiles/publisher.dir/src/publisher.cpp.o
 .PHONY : src/publisher.cpp.o
 
 src/publisher.i: src/publisher.cpp.i
@@ -422,7 +437,7 @@ src/publisher.i: src/publisher.cpp.i
 
 # target to preprocess a source file
 src/publisher.cpp.i:
-	cd /home/el-shamy/MY_PC/Git_hub/Robotic-operating-system-ROS-course/tasks/task_5_Pub_Sub/catkin_ws1/build && $(MAKE) -f counting_pkg/CMakeFiles/counting_pkg_node.dir/build.make counting_pkg/CMakeFiles/counting_pkg_node.dir/src/publisher.cpp.i
+	cd /home/el-shamy/MY_PC/Git_hub/Robotic-operating-system-ROS-course/tasks/task_5_Pub_Sub/catkin_ws1/build && $(MAKE) -f counting_pkg/CMakeFiles/publisher.dir/build.make counting_pkg/CMakeFiles/publisher.dir/src/publisher.cpp.i
 .PHONY : src/publisher.cpp.i
 
 src/publisher.s: src/publisher.cpp.s
@@ -431,7 +446,7 @@ src/publisher.s: src/publisher.cpp.s
 
 # target to generate assembly for a file
 src/publisher.cpp.s:
-	cd /home/el-shamy/MY_PC/Git_hub/Robotic-operating-system-ROS-course/tasks/task_5_Pub_Sub/catkin_ws1/build && $(MAKE) -f counting_pkg/CMakeFiles/counting_pkg_node.dir/build.make counting_pkg/CMakeFiles/counting_pkg_node.dir/src/publisher.cpp.s
+	cd /home/el-shamy/MY_PC/Git_hub/Robotic-operating-system-ROS-course/tasks/task_5_Pub_Sub/catkin_ws1/build && $(MAKE) -f counting_pkg/CMakeFiles/publisher.dir/build.make counting_pkg/CMakeFiles/publisher.dir/src/publisher.cpp.s
 .PHONY : src/publisher.cpp.s
 
 src/subscriber.o: src/subscriber.cpp.o
@@ -440,7 +455,7 @@ src/subscriber.o: src/subscriber.cpp.o
 
 # target to build an object file
 src/subscriber.cpp.o:
-	cd /home/el-shamy/MY_PC/Git_hub/Robotic-operating-system-ROS-course/tasks/task_5_Pub_Sub/catkin_ws1/build && $(MAKE) -f counting_pkg/CMakeFiles/counting_pkg_node.dir/build.make counting_pkg/CMakeFiles/counting_pkg_node.dir/src/subscriber.cpp.o
+	cd /home/el-shamy/MY_PC/Git_hub/Robotic-operating-system-ROS-course/tasks/task_5_Pub_Sub/catkin_ws1/build && $(MAKE) -f counting_pkg/CMakeFiles/subscriber.dir/build.make counting_pkg/CMakeFiles/subscriber.dir/src/subscriber.cpp.o
 .PHONY : src/subscriber.cpp.o
 
 src/subscriber.i: src/subscriber.cpp.i
@@ -449,7 +464,7 @@ src/subscriber.i: src/subscriber.cpp.i
 
 # target to preprocess a source file
 src/subscriber.cpp.i:
-	cd /home/el-shamy/MY_PC/Git_hub/Robotic-operating-system-ROS-course/tasks/task_5_Pub_Sub/catkin_ws1/build && $(MAKE) -f counting_pkg/CMakeFiles/counting_pkg_node.dir/build.make counting_pkg/CMakeFiles/counting_pkg_node.dir/src/subscriber.cpp.i
+	cd /home/el-shamy/MY_PC/Git_hub/Robotic-operating-system-ROS-course/tasks/task_5_Pub_Sub/catkin_ws1/build && $(MAKE) -f counting_pkg/CMakeFiles/subscriber.dir/build.make counting_pkg/CMakeFiles/subscriber.dir/src/subscriber.cpp.i
 .PHONY : src/subscriber.cpp.i
 
 src/subscriber.s: src/subscriber.cpp.s
@@ -458,7 +473,7 @@ src/subscriber.s: src/subscriber.cpp.s
 
 # target to generate assembly for a file
 src/subscriber.cpp.s:
-	cd /home/el-shamy/MY_PC/Git_hub/Robotic-operating-system-ROS-course/tasks/task_5_Pub_Sub/catkin_ws1/build && $(MAKE) -f counting_pkg/CMakeFiles/counting_pkg_node.dir/build.make counting_pkg/CMakeFiles/counting_pkg_node.dir/src/subscriber.cpp.s
+	cd /home/el-shamy/MY_PC/Git_hub/Robotic-operating-system-ROS-course/tasks/task_5_Pub_Sub/catkin_ws1/build && $(MAKE) -f counting_pkg/CMakeFiles/subscriber.dir/build.make counting_pkg/CMakeFiles/subscriber.dir/src/subscriber.cpp.s
 .PHONY : src/subscriber.cpp.s
 
 # Help Target
@@ -471,8 +486,8 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... subscriber"
 	@echo "... std_msgs_generate_messages_py"
-	@echo "... counting_pkg_node"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_eus"
@@ -487,6 +502,7 @@ help:
 	@echo "... install/strip"
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_eus"
+	@echo "... publisher"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_py"
