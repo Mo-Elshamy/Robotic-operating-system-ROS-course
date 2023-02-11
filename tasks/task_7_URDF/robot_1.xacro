@@ -1,0 +1,205 @@
+<?xml version="1.0"?>
+<robot name='my_robot'>
+
+    <link name="base">        
+        <visual name="base_visual">
+            <origin xyz="0.0 0.0 0.1" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="0.3 0.4 0.1"/>
+            </geometry>
+            <material name="base_material">
+                <color rgba="0.6 0.6 0.5 1.0"/>
+                <texture filename=""/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="0.2 0.3 0.1"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="right_back_wheel"> 
+        <visual name="right_back_wheel_visual">
+            <origin xyz="-0.1755 -0.15 0.1" rpy="0.0 1.57 0.0"/>
+            <geometry>
+                <cylinder radius="0.1" length="0.05"/> 
+            </geometry>
+            <material name="wheel">
+                <color rgba="0.0 0.0 0.0 1.0"/>
+                <texture filename=""/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <cylinder radius="0.1" length="0.05"/>
+            </geometry>
+        </collision>
+    </link>
+    
+    <link name="left_back_wheel"> 
+        <visual name="left_back_wheel_visual">
+            <origin xyz="0.1755 -0.15 0.1" rpy="0.0 1.57 0.0"/>
+            <geometry>
+                <cylinder radius="0.1" length="0.05"/> 
+            </geometry>
+            <material name="wheel">
+                <color rgba="0.0 0.0 0.0 1.0"/>
+                <texture filename=""/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <cylinder radius="0.1" length="0.05"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="left_front_wheel"> 
+        <visual name="left_front_wheel_visual">
+            <origin xyz="0.1755 0.15 0.1" rpy="0.0 1.57 0.0"/>
+            <geometry>
+                <cylinder radius="0.1" length="0.05"/> 
+            </geometry>
+            <material name="wheel">
+                <color rgba="0.0 0.0 0.0 1.0"/>
+                <texture filename=""/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <cylinder radius="0.1" length="0.05"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="right_front_wheel"> 
+        <visual name="right_front_wheel_visual">
+            <origin xyz="-0.1755 0.15 0.1" rpy="0.0 1.57 0.0"/>
+            <geometry>
+                <cylinder radius="0.1" length="0.05"/> 
+            </geometry>
+            <material name="wheel">
+                <color rgba="0.0 0.0 0.0 1.0"/>
+                <texture filename=""/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <cylinder radius="0.1" length="0.05"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="camera">
+        <visual name="camera_visual">
+            <origin xyz="0.0 0.225 0.12" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="0.07 0.05 0.05"/>
+            </geometry>
+            <material name="camera">
+                <color rgba="1.0 0.0 0.0 1.0"/>
+                <texture filename=""/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.0 0.0 1" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="0.0 0.0 0.0"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="lidar">
+        
+        <visual name="lidar_visual">
+            <origin xyz="0.0 0.0 0.185" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <cylinder radius="0.05" length="0.05"/>
+            </geometry>
+            <material name="lidar">
+                <color rgba="1.0 0.5 0.0 1.0"/>
+                <texture filename=""/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.0 0.0 1.0" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <cylinder radius="0.05" length="0.05"/>                
+            </geometry>
+        </collision>
+    </link>
+    <link name="lidar_base">
+        
+        <visual name="lidar_base_visual">
+            <origin xyz="0.0 0.01 0.165" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="0.1 0.125 0.03"/>
+            </geometry>
+            <material name="lidar">
+                <color rgba="1.0 0.0 0.0 1.0"/>
+                <texture filename=""/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="0.1 0.125 0.03"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="lidar" type="fixed">
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        <parent link="lidar_base"/>
+        <child link="lidar"/>
+        <axis xyz="0.0 0.0 0.0"/>
+        <limit lower="0.0" upper="0.0" effort="0.0" velocity="0.0"/>
+    </joint>
+
+    <joint name="camera" type="fixed">
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        <parent link="base"/>
+        <child link="camera"/>
+        <axis xyz="0.0 0.0 0.0"/>
+        <limit lower="0.0" upper="0.0" effort="0.0" velocity="0.0"/>
+    </joint>
+
+    <joint name="R_B_wheel" type="revolute">
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        <parent link="base"/>
+        <child link="right_back_wheel"/>
+        <axis xyz="1 0.0 0.0"/>
+        <limit lower="0.0" upper="0.0" effort="0.0" velocity="0.0"/>
+    </joint>
+
+    <joint name="R_F_wheel" type="revolute">
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        <parent link="base"/>
+        <child link="right_front_wheel"/>
+        <axis xyz="1 0.0 0.0"/>
+        <limit lower="0.0" upper="0.0" effort="0.0" velocity="0.0"/>
+    </joint>
+
+    <joint name="L_B_wheel" type="revolute">
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        <parent link="base"/>
+        <child link="left_back_wheel"/>
+        <axis xyz="1 0.0 0.0"/>
+        <limit lower="0.0" upper="0.0" effort="0.0" velocity="0.0"/>
+    </joint>
+
+    <joint name="L_F_wheel" type="revolute">
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        <parent link="base"/>
+        <child link="left_front_wheel"/>
+        <axis xyz="1 0.0 0.0"/>
+        <limit lower="0.0" upper="0.0" effort="0.0" velocity="0.0"/>
+    </joint>
+
+</robot>
