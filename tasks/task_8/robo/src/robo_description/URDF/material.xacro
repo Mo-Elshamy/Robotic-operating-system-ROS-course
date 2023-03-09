@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <material name="PLA_blue">
+        <color rgba="0 0.0 1 1"/>
+    </material>
+    <material name="PLA_orange">
+        <color rgba="1.0 0.5 0.0 1.0"/>
+    </material>
+    <material name="rubber">
+        <color rgba="0.0 0 0.0 1"/>
+    </material>
+    <material name="metal">
+        <color rgba="1 1 1 1"/>
+    </material>
+    <material name="PLA_yellow">
+        <color rgba="1 1 0.0 1"/>
+    </material>
+    
+</robot>
